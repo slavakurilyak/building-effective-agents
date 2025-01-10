@@ -7,3 +7,6 @@
 # Local
 docs/
 prompts/
+
+# Random
+**.egg-info
