@@ -1,0 +1,9 @@
+# Virtual Env
+**venv/
+
+# Pycache
+**__pycache__/
+
+# Local
+docs/
+prompts/
