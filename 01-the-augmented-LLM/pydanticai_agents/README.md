@@ -2,7 +2,7 @@
 
 The Augmented LLM using PydanticAI.
 
-```
+```mmd
 flowchart LR
     %% Define classes for styling (optiofnal)
     classDef agent fill:#EFE,stroke:#777,stroke-width:1px,color:#000
