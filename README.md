@@ -23,7 +23,7 @@ The heart of **building-effective-agents.md** is the six-step workflow:
 ### 1. The Augmented LLM
 Introduce an augmented language model that can integrate external tools, services, and knowledge bases. The LLM is not just a text generator but an **intelligent router** that leverages specialized modules for improved results.
 
-```mmd
+```mermaid
 graph TD
     A[In] --> B{LLM}
     B --> C[Out]
@@ -38,7 +38,7 @@ Create a chain (or pipeline) of prompts and sub-prompts that lead from raw user 
 - Iterating on partial solutions to refine the final output.
 - Ensuring context is passed along properly.
 
-```mmd
+```mermaid
 graph LR
     A[In] -->| | B(LLM Call 1)
     B -->|Output 1| C{Gate}
@@ -54,7 +54,7 @@ Route tasks to specialized workers or sub-agents. For example, a **sales agent**
 - Error handling if the wrong route is chosen.
 - Logging, tracing, or monitoring of agent activities.
 
-```mmd
+```mermaid
 graph LR
     A[In] --> B(LLM Call Router)
     B -.-> C(LLM Call 2)
@@ -71,7 +71,7 @@ Allow independent parts of the workflow to occur in parallel, speeding up comple
 - Synchronizing results efficiently.
 - Handling concurrency conflicts and rate limits.
 
-```mmd
+```mermaid
 graph LR
     A[In] --> B(Orchestrator)
     B -.-> C(LLM Call 1)
@@ -89,7 +89,7 @@ Establish a high-level orchestrator that coordinates multiple workers (agents). 
 - Aggregates partial results.
 - Monitors progress and handles retries.
 
-```mmd
+```mermaid
 graph LR
     A[In] --> B(Orchestrator)
     B -.-> C(LLM Call 1)
@@ -109,7 +109,7 @@ Implement a feedback loop to evaluate agent performance and optimize prompts, pa
 - Human feedback integration.
 - Iterative improvement of the entire pipeline.
 
-```mmd
+```mermaid
 graph LR
     A[In] --> B(LLM Call Generator)
     B ~~~ C(LLM Call Evaluator)
