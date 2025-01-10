@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pydanticai_agents"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "pydanticai_agents", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+pydantic-ai = "*"
+openai = "*"
+pydantic = "*"
+
+[tool.poetry.scripts]
+start = "pydanticai_agents.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
